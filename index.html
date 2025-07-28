@@ -4,76 +4,156 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Carta - Café 1683</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f5f0;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #8b5e3c;
-      color: white;
-      padding: 1em 0;
-      text-align: center;
-    }
-
-    .menu {
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 0 1em;
-    }
-
-    h2 {
-      border-bottom: 2px solid #8b5e3c;
-      padding-bottom: 0.3em;
-      margin-top: 1.5em;
-    }
-
-    .item {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5em 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .item:last-child {
-      border-bottom: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2em 0;
-      background-color: #eee;
-      font-size: 0.9em;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Café 1683</h1>
-    <p>Compre un cafe o vayase al demonio</p>
+  <header class="kon">
+     <div id="menu">Menú</div>
+     <div id="image">
+	    <img src="cafe.png" width="210px" height="210px" />
+     </div>
   </header>
 
   <div class="menu">
-    <h2>Bebidas Calientes</h2>
-    <div class="item"><span>Espresso</span><span>$0</span></div>
-    <div class="item"><span>Capuchino</span><span>$0</span></div>
-    <div class="item"><span>Café Latte</span><span>$0</span></div>
-    <div class="item"><span>Chocolate Caliente</span><span>$0</span></div>
+      <h1>Menu Promocional <b>$5000</b></h1>
+      <h3>
+          CAFÉ O TE, SANDWICH, REFRESCO O JUGO O
+          DULCE
+      </h3>
 
-    <h2>Bebidas Frías</h2>
-    <div class="item"><span>Café Frappé</span><span>$0</span></div>
-    <div class="item"><span>Té Helado</span><span>$0</span></div>
-    <div class="item"><span>Limonada Natural</span><span>$0</span></div>
+      <h2>Bebidas Calientes</h2>
+      <div class="item"><span>Americano</span><span>$2.500</span></div>
+      <div class="item"><span>Espresso</span><span>$2.500</span></div>
+      <div class="item"><span>Lungo</span><span>$2.500</span></div>
+      <div class="item"><span>Cappuccino</span><span>$3.000</span></div>
+      <div class="item"><span>Late Macchiato</span><span>$3.000</span></div>
+      <div class="item"><span>Café Latte</span><span>$3.000</span></div>
 
-    <h2>Repostería</h2>
-    <div class="item"><span>Croissant</span><span>$0</span></div>
-    <div class="item"><span>Tarta de Queso</span><span>$0</span></div>
-    <div class="item"><span>Brownie</span><span>$0</span></div>
+      <h2>Sandwich</h2>
+      <div class="item"><span>Ciabatta Italiana</span><span>$3.000</span></div>
+      <div class="item"><span>Croissant Jamon Queso</span><span>$3.000</span></div>
+      <div class="item"><span>Italiano Toscano</span><span>$3.000</span></div>
+
+      <h2>Bebidas Frías</h2>
+      <div class="item"><span>Jugos</span><span>$2.500</span></div>
+      <div class="item"><span>Refrescos</span><span>$2.000</span></div>
+      <div class="item"><span>Agua Mineral</span><span>$2.000</span></div>
+
+      <h2>Repostería</h2>
+      <div class="item"><span>Galletas</span><span>$1.500</span></div>
+      <div class="item"><span>Waffles Belga</span><span>$1.500</span></div>
+      <div class="item"><span>Muffin</span><span>$2.000</span></div>
+
+      <h2 class="te_inf">
+          <div id="infusiones">Te e Infusiones</div>
+          <div id="inf_valor">$2.500</div>
+      </h2>
+      <div class="item">
+          <span>TE DE LA MAMI</span>
+          <span>
+              (Té negro, cedrón, hierba luisa,
+              canela, cascara de naranja,
+              clavo de olor)
+          </span>
+      </div>
+
+      <div class="item">
+          <span>China Rose</span>
+          <span>
+              (Té negro chino de sabor suave
+              mezclado con pétalos de rosa.
+              Delicado, floral y astringente)
+
+          </span>
+      </div>
+      <div class="item">
+          <span>TE CHAI</span>
+          <span>
+              (Te negro Indio con cardamomo,
+              jengibre, pimienta, canela y
+              clavo de olor. Propiedades
+              energizantes)
+          </span>
+      </div>
+      <div class="item">
+          <span>CAMPOS DE NARANJO</span>
+          <span>
+              (Té negro Indio con trozos de
+              naranja, pétalos de azahar y
+              cascara de naranja dulce)
+          </span>
+      </div>
+      <div class="item">
+          <span>BOMBOM DE FRUTAS</span>
+          <span>
+              (Té negro Indio con crocantes
+              de avellana, trozos y cáscara de
+              cacao y aceite trufa)
+
+          </span>
+      </div>
+      <div class="item">
+          <span>WHISKY & CARAMELO</span>
+          <span>
+              (Té negro Indio con cubos de
+              chocolate con caramelo y
+              concentrado de whisky. De
+              dulces notas a cacao y crema
+              irlandesa)
+
+          </span>
+      </div>
+      <div class="item">
+          <span>SWEET MANGO</span>
+          <span>
+              (Té verde Mao Feng con trozos
+              de mango, trozos de papaya y
+              dulce aroma a Mango)
+
+          </span>
+      </div>
+      <div class="item">
+          <span>ROOIBOS FRESH MINT</span>
+          <span>
+              (Infusión a base Rooibos y
+              honeybush sudamericano con
+              trozos y cascara de limón,
+              menta y lemongrass)
+
+          </span>
+      </div>
+      <div class="item">
+          <span>ROOIBOS APPELTERT</span>
+          <span>
+              (Infusión a base de Rooibos y
+              honeybush, con trozos de
+              manzana, crispis de miel, trozos
+              de canela y aroma a strudel de
+              manzana)
+
+          </span>
+      </div>
+      <div class="item">
+          <span>AGUA DE VERANO</span>
+          <span>
+              (Infusión Tropical con flores de
+              hibisco, rosa mosqueta, trozos
+              de piña y mango, rodajas de
+              manzana y frutilla, chips de
+              coco y hojas de bambú)
+          </span>
+      </div>
+      <div class="item">
+          <span>STRAWBERRY WHITE</span>
+          <span>
+              Té blanco, flores de hibisco,
+              rosa mosqueta, trozos de
+              manzana, trozos de frutilla,
+              saborizantes naturales.
+
+          </span>
+      </div>
   </div>
 
   <footer>
